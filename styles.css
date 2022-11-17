@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 1.4;
+    background: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+img {
+    width: 100%;
+}
+ul li {
+    list-style: none;
+    text-align: center;
+}
+.sub, p{
+    color: hsl(227, 10%, 46%);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+main {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.profile-info {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.profile-info .hedding span {
+    color:  hsl(227, 10%, 46%);
+}
+.hedding, h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-top: 1px solid hsl(227, 10%, 90%);
+}
+.profile {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    background: url(images/image-victor.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 65px;
+    left: 100px;
+}
+.top {
+    position: absolute;
+    top: -250px;
+    left: -40px;
+    width: 660px;
+}
+.bottom {
+    position: absolute;
+    bottom: -280px;
+    right: -40px;
+    width: 700px;
+}
+@media (max-width:760px) {
+    .top {
+        top: -170px;
+        left: -220px;
+        width: 500px;
+    }
+    .bottom {
+        bottom: -170px;
+        right: -220px;
+        width: 500px;
+    }
+}
